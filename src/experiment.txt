@@ -1,1 +1,2 @@
 modificat
+pentru git pull
