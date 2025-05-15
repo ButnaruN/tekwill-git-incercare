@@ -1,15 +1,27 @@
+import pack1and2.Class1;
+import pack1and2.Class2;
+import pack3and4.Class3;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Class1 object1 = new Class1();
+        Class1 object2 = new Class1(6);
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        int c = object1.printA();
+        System.out.println("c="+c);
+
+        System.out.println(object2);
+
+        System.out.println(object2.a);
+
+        Class2 object3 = new Class2();
+
+        System.out.println(object3.a);
+
+        Class3 objecttxt = new Class3();
+
+        String c3 = objecttxt.printMsg();
     }
 }
